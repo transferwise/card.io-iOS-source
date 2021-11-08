@@ -132,7 +132,7 @@ static ScanAvailabilityStatus cachedScanAvailabilityStatus = ScanAvailabilityUnk
   UIGraphicsEndImageContext();
   
   UIColor *tintColor = [UIColor colorWithWhite:0.5f alpha:0.3f];
-  blurredScreenImageView.image = [viewImage applyBlurWithRadius:10 tintColor:tintColor saturationDeltaFactor:1.8f maskImage:nil];
+  blurredScreenImageView.image = [viewImage cio_applyBlurWithRadius:10 tintColor:tintColor saturationDeltaFactor:1.8f maskImage:nil];
 	
   return blurredScreenImageView;
 }
